@@ -30,15 +30,6 @@ h5 {
     font-family: 'Play', sans-serif;
 }
 
-.rechch {
-    background-color: #fff;
-    opacity: 80%;
-    color: black;
-    display: flex;
-    position: absolute;
-    top: 200px;
-    padding: 2px;
-}
 
 @keyframes anim-slider-on {
     0% {left:-100vw}
@@ -84,6 +75,61 @@ body {
     top: 25px;
     
 } 
+form{
+    width: 100%;
+}
+
+#form{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 250px;
+    padding-left: 5px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+#champ_form{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+#champ_form input{
+    min-height: 40px;
+}
+
+input[type="date"] {
+    border: none;
+    border-radius: 5px;
+
+}
+
+select{
+    min-height: 40px;
+}
+
+
+
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: rgba(0, 255, 0, 0.5);
+    border: none;
+    width: 30%;
+    color: white;
+    min-height: 50px!important;
+}
 .container {
     position: fixed;
     top:0;

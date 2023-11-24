@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    position: relative;
+    z-index: -1;
+}
+
+.header-texte {
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    width: 800px;
+    height: auto;
+    font-size: 100%;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+#font1{
+    font-family: 'Play', sans-serif;
+}
+
+.rechch {
+    background-color: #fff;
+    opacity: 80%;
+    color: black;
+    display: flex;
+    position: absolute;
+    top: 200px;
+    padding: 2px;
+}
+
+@keyframes anim-slider-on {
+    0% {left:-100vw}
+    100% {left:0};            
+}
+@keyframes anim-slider-off {
+    0% {left:0}
+    100% {left:-100vw};            
+}
+
+
+.container {
+display: inline-block;
+cursor: pointer;
+position: relative;
+right: 0;
+border: 1px #fff;
+border-radius: 10%;
+}
+
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 1px;
+background-color: #fff;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+.change .container {
+background-color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+#menu-slider {
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    background: #fff;
+    left:-100vw;
+    top: 25px;
+    
+} 
+.container {
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+.anim-slider-on {
+    animation: anim-slider-on .7s forwards;
+}
+.anim-slider-off {
+    animation: anim-slider-off .7s forwards;
+}
+
+.liste{
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}

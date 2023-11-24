@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="font1">
+        <img class="header-image" src="assets/background.jpg" width="100%">
+        <div id="menu-slider">
+            <div>Louer une voiture</div>
+            <div>Louer un utilitaire</div>
+            <div>Réserver un chauffeur</div>
+            <div>Découvrez nos agences</div>            
+            <div>Mon compte</div>
+            <div>Contact</div>
+        </div>
+        <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="header-texte">
+            <h1>Bienvenue à bord</h1>
+            <h5>Location de voiture 24h/24 et 7j/7</h5>
+        
+            <div class="rechch">
+                <label for="adresse">Adresse de départ</label>
+                <input type="text" list="" id="adresse" name="adresse" size="10" />
+                <label for="debut">Début de Location</label>
+                <input type="date" id="debut" name="début">
+                <label for="fin">Fin de Location</label>
+                <input type="date" id="fin" name="fin">
+                <input type="submit">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div><span>7 résultats</span></div>
+            <div></div>
+        </div>
+        <section class="liste" *ngFor="let voiture of voitures">
+            <div>
+                <span>
+                    <img src="assets/left.png" width="5%" class="arrow_left">
+                    <img src="assets/vehicule1.png" width="50%" id="vignette">
+                    <img src="assets/right.png" width="5%" class="arrow_right">
+                </span>
+            </div>
+            <div>
+                <h2 class="modele">Peugeot 308</h2>
+                <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 10000 km (0.5/km supplémentaire)</p>
+                <p class="prix et agence">999 € - Agence de Paris</p>
+                <button>Réserver et payer</button>
+            </div>
+        </section>
+        <section class="liste">
+            <div>
+                <span>
+                    <img src="assets/left.png" width="5%" class="arrow_left">
+                    <img src="assets/vehicule2.png" width="50%" id="vignette">
+                    <img src="assets/right.png" width="5%" class="arrow_right">
+                </span>
+            </div>
+            <div>
+                <h2 class="modele">Ford Focus</h2>
+                <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 10000 km (0.5/km supplémentaire)</p>
+                <p class="prix et agence">999 € - </p>
+                <button>Réserver et payer</button>
+            </div>
+        </section>
+        <section class="liste">
+            <div>
+                <span>
+                    <img src="assets/left.png" width="5%" class="arrow_left">
+                    <img src="assets/vehicule3.png" width="50%" id="vignette">
+                    <img src="assets/right.png" width="5%" class="arrow_right">
+                </span>
+            </div>
+            <div>
+                <h2 class="modele">Audi A1</h2>
+                <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 10000 km (0.5/km supplémentaire)</p>
+                <p class="prix et agence">1100 € - Agence de Paris</p>
+                <button>Réserver et payer</button>
+            </div>
+        </section>
+        <section class="liste">
+            <div>
+                <span>
+                    <img src="assets/left.png" width="5%" class="arrow_left">
+                    <img src="assets/vehicule4.png" width="50%" id="vignette">
+                    <img src="assets/right.png" width="5%" class="arrow_right">
+                </span>
+            </div>
+            <div>
+                <h2 class="modele">Opel Mokka</h2>
+                <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 10000 km (0.5/km supplémentaire)</p>
+                <p class="prix et agence">1150 € - Agence de Paris</p>
+                <button>Réserver et payer</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+<footer class="footer">
+    <img src="assets/agence.jpg" width="20%">
+    <div><p>Notre Agence de <b>Paris</b></p>
+    <p>300 boulevard de vaugirard, 75015, Paris</p>
+    <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+    <p>01 49 78 21 33</p>
+    <p>contact@vtc.com</p></div>
+</footer>
+</html>
+

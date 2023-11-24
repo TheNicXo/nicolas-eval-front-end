@@ -68,6 +68,9 @@ const arrowRight = document.querySelector('.arrow_right');
 const nbreImages = voitures.thumbnails.length;
 let indexImage = 0;
 
+for(let voiture in voitures){
+    
+}
 
 arrowLeft.addEventListener('click', (e)=> {	
 	indexImage--;	

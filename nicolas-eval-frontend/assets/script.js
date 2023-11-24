@@ -69,7 +69,7 @@ const nbreImages = voitures.thumbnails.length;
 let indexImage = 0;
 
 for(let voiture in voitures){
-    
+
 }
 
 arrowLeft.addEventListener('click', (e)=> {	
@@ -104,3 +104,9 @@ const displayVignette = (indexImage = 0)=>{
 }
 
 
+const InfiniteScroll = () =>{
+    const endOfPage = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+    if(endOfPage){
+        addCards(currentPage +1);
+    }
+}
